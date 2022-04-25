@@ -21,10 +21,10 @@ public class Metodos {
 
     }
 
-    public static String operacions(String operacion) {
+    public static String operacions() {
         Scanner sc = new Scanner(System.in);
         boolean comprobar = false;
-
+        String operacion;
         do {
             comprobar = true;
             operacion = sc.nextLine();
@@ -40,7 +40,7 @@ public class Metodos {
                     comprobar = false;
             }
         } while (comprobar != true);
-        return null;
+        return operacion;
 
     }
 
