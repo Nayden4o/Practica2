@@ -26,8 +26,7 @@ public class Practica2 {
 
             String numero1;
             do {
-                System.out.println("\n Introdueix el primer numero. ");
-                numero1 = sc.nextLine();
+                numero1 = metodos.numero();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
@@ -111,7 +110,6 @@ public class Practica2 {
                     case "n":
                     case "N":
                         break;
-                        
                     default:
                         System.err.println("\n Error, posa un valor vàlid. \n");
                         comprobar = false;
