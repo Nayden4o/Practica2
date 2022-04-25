@@ -98,7 +98,7 @@ public class Practica2 {
                 }
             } while (comprobar != true);
 
-            System.out.println("(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
+            System.out.println("[" + numero1 + "] " + operacion + " [" + numero2 + "]" + " = " + res);
             System.out.println("\n Vols continuar operant? \n");
             System.out.println(" [s/n]");
             do {
