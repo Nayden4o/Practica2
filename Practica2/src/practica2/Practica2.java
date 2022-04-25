@@ -111,6 +111,7 @@ public class Practica2 {
                     case "n":
                     case "N":
                         break;
+                        
                     default:
                         System.err.println("\n Error, posa un valor vàlid. \n");
                         comprobar = false;
