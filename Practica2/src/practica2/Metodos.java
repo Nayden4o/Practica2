@@ -12,15 +12,36 @@ import java.util.Scanner;
  * @author usuari
  */
 public class Metodos {
-    
-    public static String numero(){
-                Scanner sc = new Scanner(System.in);
 
-                
-                System.out.println("\n Introdueix el primer numero. ");
-                return sc.nextLine();
-        
+    public static String numero() {
+        Scanner sc = new Scanner(System.in);
 
-        }
+        System.out.println("\n Introdueix el primer numero. ");
+        return sc.nextLine();
+
+    }
+
+    public static String operacions(String operacion) {
+        Scanner sc = new Scanner(System.in);
+        boolean comprobar = false;
+
+        do {
+            comprobar = true;
+            operacion = sc.nextLine();
+
+            switch (operacion) {
+                case "s":
+                case "S":
+                case "n":
+                case "N":
+                    break;
+                default:
+                    System.err.println("\n Error, posa un valor vàlid. \n");
+                    comprobar = false;
+            }
+        } while (comprobar != true);
+        return null;
+
+    }
 
 }
