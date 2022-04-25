@@ -101,9 +101,8 @@ public class Practica2 {
             System.out.println("\n Vols continuar operant? \n");
             System.out.println(" [s/n]");
             
-            operacion = sc.nextLine();
-
-                operacion = Metodos.operacions(operacion);
+            
+                operacion = Metodos.operacions();
                 
             
         
