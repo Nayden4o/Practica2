@@ -26,7 +26,7 @@ public class Practica2 {
 
             String numero1;
             do {
-                numero1 = metodos.numero();
+                numero1 = Metodos.numero();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
@@ -100,21 +100,15 @@ public class Practica2 {
             System.out.println("[" + numero1 + "] " + operacion + " [" + numero2 + "]" + " = " + res);
             System.out.println("\n Vols continuar operant? \n");
             System.out.println(" [s/n]");
-            do {
-                comprobar = true;
-                operacion = sc.nextLine();
+            
+            operacion = sc.nextLine();
 
-                switch (operacion) {
-                    case "s":
-                    case "S":
-                    case "n":
-                    case "N":
-                        break;
-                    default:
-                        System.err.println("\n Error, posa un valor vàlid. \n");
-                        comprobar = false;
-                }
-            } while (comprobar != true);
-        } while (operacion.equals("s") || operacion.equals("S"));
-    }
+                operacion = Metodos.operacions(operacion);
+                
+            
+        
+            
+    }while (operacion.equals("s") || operacion.equals("S"));
 }
+}
+
