@@ -20,7 +20,7 @@ public class Metodos {
         return sc.nextLine();
 
     }
-
+    
     public static String operacions() {
         Scanner sc = new Scanner(System.in);
         boolean comprobar = false;
